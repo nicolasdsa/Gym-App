@@ -10,5 +10,10 @@ class clientModel extends Model {
     await id.save();
     return id
   }
+
+  async list(){
+    const list = await this.collection.find({});
+    return list
+  }
 }
 module.exports = new clientModel();

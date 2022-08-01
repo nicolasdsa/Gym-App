@@ -3,7 +3,7 @@ const measurentsModel = require('../models/measurents');
 
 class measurentsController {
   async create(body){
-    const measurents = await measurentController.create(body);
+    const measurents = await measurentsModel.createMeasurent(body);
     return measurents
   }
 }
